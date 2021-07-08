@@ -21,7 +21,7 @@ compile the project
 1. $ src: javac -cp outDir/WEB-INF/lib/javax.servlet-api-3.0.1.jar servlet.java -d outDir/WEB-INF/classes/
 2. $ src: cd outDir
 3. $ src/outDir: jar -cvf servlet.war *
-4. $ src/outDir: mv servlet.war ../../jetty_base/webapps
+4. $ src/outDir: mv servlet.war ../../jetty_base/webapps*
 
 start the server with:
 $ jetty_base: java -jar jetty-home-10.0.5/start.jar
@@ -29,3 +29,5 @@ $ jetty_base: java -jar jetty-home-10.0.5/start.jar
 Run the applicatiom
 $ src: localhost:8080/reverseservlet/reverse "hello world"
 dlrow olleh
+
+*in the code example src/outDir are subdirectories of jetty_base
